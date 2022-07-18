@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 
-class WelcomeController extends Controller
+class AuthController extends Controller
 {
     /**
      * トップページ を表示する
@@ -13,15 +13,6 @@ class WelcomeController extends Controller
      */
     public function index()
     {
-        return view('welcome');
+        return view('index');
     }
-    
-    /**
-     * 2ndページ　を表示する
-     * @return \illuminate\View\View
-     */
-     public function second()
-     {
-         return view('welcome_second');
-     }
 }
